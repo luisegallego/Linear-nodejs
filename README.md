@@ -1,1 +1,1 @@
-"# Linear-nodejs" 
+A nodejs addon focused on Linear Algebra
