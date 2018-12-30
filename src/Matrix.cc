@@ -1,4 +1,6 @@
 #include "Matrix.h"
+#include <vector>
+#include <iostream>
 
 Matrix::Matrix() {
     for(int i = 0; i < 3; i++){
@@ -7,8 +9,17 @@ Matrix::Matrix() {
             row.push_back(0.0);
         }
 
-        _matrix.push_back(row);
+        _data.push_back(row);
     }
 };
 
 Matrix::~Matrix(){};
+
+void Matrix::printMatrix(){
+    for(int row = 0; row < _data.size(); row++){
+        for(int column = 0; column < _data[row].size(); column++){
+            std::cout << _data[row][column];
+        }
+        std::cout << std::endl;
+    }
+}
