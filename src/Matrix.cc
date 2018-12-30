@@ -19,7 +19,7 @@ Matrix::~Matrix(){};
 void Matrix::printMatrix(){
     for(int row = 0; row < _data.size(); row++){
         for(int column = 0; column < _data[row].size(); column++){
-            std::cout << _data[row][column];
+            std::cout << _data[row][column] << " ";
         }
         std::cout << std::endl;
     }

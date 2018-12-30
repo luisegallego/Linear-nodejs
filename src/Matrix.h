@@ -14,6 +14,5 @@ class Matrix {
         // TheMatrix _data;
         std::vector<std::vector<double>> _data;
 
-        void init(int size);
         void init(int rows, int columns);
 };
