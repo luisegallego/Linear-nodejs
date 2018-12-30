@@ -6,7 +6,8 @@
     ],
     "sources": [
       "src/linear.cc",
-      "src/index.cc"
+      "src/index.cc",
+      "src/Matrix.cc"
     ]
   }]
 }
