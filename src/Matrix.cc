@@ -8,7 +8,6 @@ Matrix::Matrix() {
         for(int j = 0; j < 3; j++){
             row.push_back(0.0);
         }
-
         _data.push_back(row);
     }
 };
