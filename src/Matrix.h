@@ -3,8 +3,8 @@
 class Matrix {
     public:
         Matrix();
-        Matrix(int size);
-        Matrix(int rows, int columns);
+        Matrix(unsigned int size);
+        Matrix(unsigned int rows, unsigned int columns);
         ~Matrix();
         void printMatrix();
     
@@ -14,5 +14,5 @@ class Matrix {
         // TheMatrix _data;
         std::vector<std::vector<double>> _data;
 
-        void init(int rows, int columns);
+        void init(unsigned int rows, unsigned int columns);
 };
