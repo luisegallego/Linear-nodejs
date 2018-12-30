@@ -8,4 +8,4 @@ class Matrix {
     private:
         std::vector<std::vector<double>> _matrix;
 
-}
+};
