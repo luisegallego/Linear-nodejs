@@ -1,15 +1,17 @@
 #include "Matrix.h"
-#include <vector>
 #include <iostream>
 
+
 Matrix::Matrix() {
-    for(int i = 0; i < 3; i++){
-        std::vector<double> row;
-        for(int j = 0; j < 3; j++){
-            row.push_back(0.0);
-        }
-        _data.push_back(row);
-    }
+    Matrix::init(3, 3);
+};
+
+Matrix::Matrix(int size) {
+    Matrix::init(size, size);
+};
+
+Matrix::Matrix(int rows, int columns){
+    Matrix::init(rows, columns);
 };
 
 Matrix::~Matrix(){};
@@ -21,4 +23,14 @@ void Matrix::printMatrix(){
         }
         std::cout << std::endl;
     }
-}
+};
+
+void Matrix::init(int rows, int columns){
+    for(int i = 0; i < rows; i++){
+        std::vector<double> row;
+        for(int j = 0; j < columns; j++){
+            row.push_back(1.1);
+        }
+        _data.push_back(row);
+    }
+};
